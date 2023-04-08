@@ -1,0 +1,72 @@
+:root {
+  /* FONTS */
+  --FF1: "Barlow";
+  --FF2: "Fraunces";
+  /* --FS: 18px;
+  --FW1: 600;
+  --FW2: 900; */
+
+  /* COLORS */
+
+  --TESTEMONIALP-COLOR: hsl(167, 40%, 24%);
+  --COLOR4: hsl(198, 62%, 26%);
+  --COLOR5: hsl(168, 34%, 41%);
+  --COLOR6: hsl(212, 27%, 19%);
+  --COLOR7: hsl(168, 37%, 58%);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:any-link {
+  color: var(--COLOR6);
+}
+
+li {
+  list-style-type: none;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 3rem 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--COLOR7);
+  color: var(--COLOR4);
+  font-family: var(--FF1);
+}
+
+.footer-h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 1.5rem;
+}
+
+.footer__link-us {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer__social--ul {
+  margin-bottom: 3.5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__social--ul li {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 375px) {
+  .footer__link-us {
+    font-weight: lighter;
+  }
+  .footer__social--ul li {
+    font-size: 1.5rem;
+  }
+}
